@@ -1,0 +1,45 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  position: fixed;
+  justify-content: space-between;
+  margin: 0 2rem;
+  width: 90%;
+  z-index: 100;
+  height: fit-content;
+  background-color: #f7f6f4;
+}
+.logo {
+  width: 6rem;
+  height: auto;
+}
+.nav .menu ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+.nav .menu ul li a {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 320px) {
+  .nav {
+    width: 100%;
+    justify-content: center;
+  }
+  .nav .menu {
+    transform: scale(0.75);
+  }
+}
+@media screen and (max-width: 425px) {
+  .nav {
+    margin: 0;
+
+    justify-content: center;
+  }
+}

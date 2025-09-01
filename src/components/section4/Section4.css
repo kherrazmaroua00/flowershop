@@ -1,0 +1,58 @@
+.whyus {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.whyus .title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.whyus .cards {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.whyus .card {
+  background: rgba(221, 211, 207, 0.4); /* اللون مع شفافية */
+  backdrop-filter: blur(10px); /* يعطي تأثير الزجاج */
+  -webkit-backdrop-filter: blur(10px); /* دعم Safari */
+  border-radius: 16px; /* زوايا مدورة */
+  border: 1px solid rgba(105, 105, 105, 0.3); /* حافة خفيفة شفافة */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 14rem;
+  width: 160px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whyus .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.whyus .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.icon.green {
+  color: #29250aa3; /* green */
+}
+
+.whyus h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.whyus p {
+  color: #4b5563;
+  font-size: 0.95rem;
+}

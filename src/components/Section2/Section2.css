@@ -1,0 +1,52 @@
+.s2 {
+  margin: 8%;
+}
+.s2 .head {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.s2 .head h1 {
+  font-size: 4.5rem;
+  color: #4e1807b0; /* gray-brown text */
+  margin-bottom: 1rem;
+}
+
+.swiper-wrapper {
+  padding: 4rem;
+}
+.s2 .filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem;
+  transform: scale(1.2);
+  position: relative;
+}
+.s2 .filters .filter {
+  background: rgba(221, 211, 207, 0.4); /* اللون مع شفافية */
+  backdrop-filter: blur(10px); /* يعطي تأثير الزجاج */
+  -webkit-backdrop-filter: blur(10px); /* دعم Safari */
+  border-radius: 16px; /* زوايا مدورة */
+  border: 1px solid rgba(165, 164, 164, 0.3); /* حافة خفيفة شفافة */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+  color: #4e1807b0;
+}
+@media screen and (max-width: 425px) {
+  .s2 {
+    margin: 0;
+  }
+  .s2 .head h1 {
+    font-size: 3rem;
+  }
+
+  .s2 .filters {
+    transform: scale(0.9);
+    margin: 0%;
+  }
+  .swiper-slide {
+    transform: scale(0.9);
+  }
+}

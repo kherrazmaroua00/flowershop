@@ -1,0 +1,200 @@
+.box {
+  border-radius: 12px;
+  padding: 20px;
+
+  background: rgba(221, 211, 207, 0.4); /* اللون مع شفافية */
+  backdrop-filter: blur(10px); /* يعطي تأثير الزجاج */
+  -webkit-backdrop-filter: blur(10px); /* دعم Safari */
+  border-radius: 16px; /* زوايا مدورة */
+  border: 1px solid rgba(141, 141, 141, 0.3); /* حافة خفيفة شفافة */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+
+  color: #4b1f0e;
+}
+
+h2,
+h3 {
+  margin: 15px 0 10px;
+  font-size: 20px;
+
+  color: #4b1f0e;
+}
+
+.shape-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.shape-buttons button {
+  color: #4b1f0ea3;
+  padding: 8px 14px;
+  background: #d9d9d9;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.shape-buttons button.active {
+  border-color: #402a02a3;
+  background: #3e071591;
+  font-weight: bold;
+  color: white;
+}
+.shape-buttons button:hover {
+  background: #c9c9c9;
+}
+
+.filters {
+  margin-top: 10px;
+}
+
+.filter-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clear-btn {
+  background: none;
+  border: none;
+  color: brown;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.filter-colors {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.colors {
+  display: flex;
+  gap: 8px;
+  margin-left: 10px;
+}
+
+.circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid #333;
+  cursor: pointer;
+  outline: none;
+  transition: border 0.2s ease-in-out;
+}
+
+.circle:hover {
+  border: 2px solid #333;
+}
+
+.white {
+  background: #fff;
+}
+.red {
+  background: red;
+}
+.orange {
+  background: orange;
+}
+.pink {
+  background: pink;
+}
+.yellow {
+  background: gold;
+}
+.purple {
+  background: violet;
+}
+.blue {
+  background: blue;
+}
+.dropdown {
+  width: 100%;
+  padding: 10eepx;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  background: #d9d9d9;
+  color: #4b1f0e;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dropdown:hover {
+  background: #c9c9c9;
+}
+
+.selected-flowers {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.flower-tag {
+  background: #d9d9d9;
+  padding: 3px 5px;
+  border-radius: 8px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.gift-section textarea {
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  background: #d9d9d9;
+  font-family: inherit;
+}
+
+.price-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  padding: 8px;
+  background: #d9d9d9;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cancel {
+  background: #fff;
+  color: brown;
+}
+
+.cancel:hover {
+  background: #f3dcdc;
+}
+
+.add {
+  background: brown;
+  color: white;
+}
+
+.add:hover {
+  background: #6b1a0c;
+}
+@media all and (max-width: 375px) {
+  .box {
+    transform: scale(0.9);
+    padding: 10px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .box {
+    width: 90%;
+  }
+}

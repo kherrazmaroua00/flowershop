@@ -1,0 +1,29 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+* {
+}
+body {
+  background-color: #f7f6f4;
+}
+@media screen and (max-width: 320px) {
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+/* Small laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* Desktop */
+@media (min-width: 1025px) and (max-width: 1440px) {
+}
+
+/* Large screens / 4K */
+@media (min-width: 1441px) {
+}

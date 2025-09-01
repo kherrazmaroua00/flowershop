@@ -1,0 +1,100 @@
+.s3 {
+  margin: 2rem;
+}
+
+.s3 .header {
+  display: flex;
+  flex-direction: column;
+  margin: 8%;
+}
+.s3 .header h1 {
+  font-size: 4.5rem;
+  color: #4e1807b0; /* gray-brown text */
+  margin-bottom: 1rem;
+}
+.s3 .content {
+  display: flex;
+  margin: 1rem;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.s3 .s3right {
+  width: 50%;
+}
+.flower-list {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(160px, 1fr)
+  ); /* 3 كروت فكل صف */
+  row-gap: 20px;
+  /* المسافة بين الكروت */
+  max-height: 400px; /* الطول الأقصى */
+  overflow-y: auto; /* سكروول عمودي */
+  padding-right: 8px;
+}
+
+/* شكل السكروول */
+.flower-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.flower-list::-webkit-scrollbar-track {
+  background: #f0e6e6;
+  border-radius: 10px;
+}
+
+.flower-list::-webkit-scrollbar-thumb {
+  background: #b07c62;
+  border-radius: 10px;
+}
+
+.flower-list::-webkit-scrollbar-thumb:hover {
+  background: #8b5a44;
+}
+@media all and (max-width: 375px) {
+  .s3 {
+    gap: 0;
+  }
+  .s3 .header h1 {
+    font-size: 3rem;
+  }
+  .s3 .content {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .s3 .s3right {
+    width: 100%;
+  }
+  .flower-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+  }
+}
+@media all and (max-width: 768px) {
+  .s3 {
+    gap: 0;
+  }
+  .s3 .header h1 {
+    font-size: 3rem;
+  }
+  .s3 .content {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .s3 .s3right {
+    width: 100%;
+  }
+  .flower-list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+}
+@media all and (max-width: 1024px) {
+}

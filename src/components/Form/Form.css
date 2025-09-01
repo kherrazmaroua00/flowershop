@@ -1,0 +1,77 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  background-color: #f7f5f3;
+  width: 100%;
+  /* matches light off-white background */
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  justify-content: center;
+  background: rgba(221, 211, 207, 0.4); /* اللون مع شفافية */
+  backdrop-filter: blur(10px); /* يعطي تأثير الزجاج */
+  -webkit-backdrop-filter: blur(10px); /* دعم Safari */
+  border-radius: 16px; /* زوايا مدورة */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* حافة خفيفة شفافة */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* ظل خفيف */ /* pastel beige */
+
+  border-radius: 20px;
+
+  border: 1px solid #b5ada7;
+  width: 35rem;
+}
+
+.order-form input,
+.order-form textarea {
+  width: 80%;
+  font-size: x-large;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #b5ada7;
+  border-radius: 15px;
+  outline: none;
+  font-size: 0.9rem;
+
+  color: #444;
+}
+
+.order-form input::placeholder,
+.order-form textarea::placeholder {
+  text-transform: uppercase;
+  color: #a19b96;
+  letter-spacing: 1px;
+}
+
+.order-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.order-form button {
+  display: block;
+  margin: 0 auto;
+
+  padding: 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .form-container {
+    width: 90%;
+  }
+  .order-form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .form-container {
+    width: 100%;
+    margin: 0;
+  }
+}
