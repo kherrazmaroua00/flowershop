@@ -1,7 +1,7 @@
 .box {
   border-radius: 12px;
   padding: 20px;
-
+  margin: 2rem 0;
   background: rgba(221, 211, 207, 0.4); /* اللون مع شفافية */
   backdrop-filter: blur(10px); /* يعطي تأثير الزجاج */
   -webkit-backdrop-filter: blur(10px); /* دعم Safari */
@@ -190,7 +190,8 @@ h3 {
 @media all and (max-width: 375px) {
   .box {
     transform: scale(0.9);
-    padding: 10px;
+    margin: 1rem;
+    width: 90%;
   }
 }
 @media all and (max-width: 1024px) {

@@ -27,19 +27,13 @@
   font-size: 1.3rem;
   cursor: pointer;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
   .nav {
+    margin: 0;
     width: 100%;
     justify-content: center;
   }
   .nav .menu {
-    transform: scale(0.75);
-  }
-}
-@media screen and (max-width: 425px) {
-  .nav {
-    margin: 0;
-
-    justify-content: center;
+    transform: scale(0.8);
   }
 }

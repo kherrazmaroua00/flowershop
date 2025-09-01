@@ -30,17 +30,16 @@ export default function Section4() {
 
   return (
     <section className="whyus" id="About">
-      <div className="container">
-        <h2 className="title">Why Us?</h2>
-        <div className="cards">
-          {points.map((item, i) => (
-            <div key={i} className="card">
-              {item.icon}
-              <h3>{item.title}</h3>
-              <p>{item.desc}</p>
-            </div>
-          ))}
-        </div>
+      <h2 className="title">Why Us?</h2>
+
+      <div className="cards">
+        {points.map((item, i) => (
+          <div key={i} className="card">
+            {item.icon}
+            <h3>{item.title}</h3>
+            <p>{item.desc}</p>
+          </div>
+        ))}
       </div>
     </section>
   );

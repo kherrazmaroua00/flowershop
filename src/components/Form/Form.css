@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem;
+
   background-color: #f7f5f3;
   width: 100%;
   /* matches light off-white background */
@@ -24,17 +24,17 @@
   border-radius: 20px;
 
   border: 1px solid #b5ada7;
-  width: 35rem;
+  width: 50%;
 }
 
 .order-form input,
 .order-form textarea {
-  width: 80%;
+  width: 70%;
   font-size: x-large;
   padding: 1rem;
   margin-bottom: 1rem;
   border: 1px solid #b5ada7;
-  border-radius: 15px;
+  border-radius: 25px;
   outline: none;
   font-size: 0.9rem;
 

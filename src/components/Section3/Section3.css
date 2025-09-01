@@ -23,14 +23,11 @@
 }
 .flower-list {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(160px, 1fr)
-  ); /* 3 كروت فكل صف */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
   row-gap: 20px;
-  /* المسافة بين الكروت */
-  max-height: 400px; /* الطول الأقصى */
-  overflow-y: auto; /* سكروول عمودي */
+  max-height: 400px;
+  overflow-y: auto;
   padding-right: 8px;
 }
 
@@ -52,9 +49,9 @@
 .flower-list::-webkit-scrollbar-thumb:hover {
   background: #8b5a44;
 }
-@media all and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .s3 {
-    gap: 0;
+    margin: 3rem 0;
   }
   .s3 .header h1 {
     font-size: 3rem;
@@ -64,19 +61,20 @@
     justify-content: center;
     align-items: center;
     margin: 0;
+    gap: 1rem;
   }
 
   .s3 .s3right {
     width: 100%;
   }
   .flower-list {
-    grid-template-columns: repeat(2, 1fr);
     gap: 1px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }
-@media all and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .s3 {
-    gap: 0;
+    margin: 0%;
   }
   .s3 .header h1 {
     font-size: 3rem;
@@ -86,14 +84,14 @@
     justify-content: center;
     align-items: center;
     margin: 0;
+    width: 100%;
   }
 
   .s3 .s3right {
     width: 100%;
   }
   .flower-list {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 1rem 3rem;
   }
 }
 @media all and (max-width: 1024px) {

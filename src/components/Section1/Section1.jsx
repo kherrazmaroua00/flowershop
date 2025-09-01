@@ -6,10 +6,9 @@ import b3 from "/public/img/b3.png";
 export const Section1 = () => {
   return (
     <div className="s1">
-      <h1></h1>
       <h1>Flowers for you</h1>
-      <h1>Send Love with Every Flower</h1>
-      <button className="button">
+      <p>Send Love with Every Flower</p>
+      <button style={{ margin: "1rem" }} className="button">
         <a href="#ordernow">Order Now</a>
       </button>
       <div className="img">

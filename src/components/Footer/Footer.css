@@ -3,7 +3,7 @@
   backdrop-filter: blur(10px); /* يعطي تأثير الزجاج */
   -webkit-backdrop-filter: blur(10px); /* دعم Safari */
   border-radius: 16px; /* زوايا مدورة */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* حافة خفيفة شفافة */
+  border: 1px solid rgba(159, 158, 158, 0.3); /* حافة خفيفة شفافة */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* ظل خفيف */
   padding: 4rem 1.5rem 1rem;
   border-top-left-radius: 150px;
