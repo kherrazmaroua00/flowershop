@@ -4,7 +4,7 @@ import "./App.css";
 import { Section2 } from "./components/Section2/Section2";
 import { Section3 } from "./components/Section3/Section3";
 import Footer from "./components/Footer/Footer";
-import Section4 from "./components/Section4/Section4";
+import Section4 from "./components/section4/Section4";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Form from "./components/Form/Form";
